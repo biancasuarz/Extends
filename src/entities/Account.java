@@ -1,10 +1,10 @@
-package entitites;
+package entities;
 
 public class Account{
 
     private Integer number;
     private String holder;
-    private double balance;
+    protected Double balance;
 
     public Account(){
     }

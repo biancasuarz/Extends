@@ -1,4 +1,4 @@
-package entitites;
+package entities;
 public class BusinessAccount extends Account{
     private double loanLimit;
 
@@ -21,7 +21,7 @@ public class BusinessAccount extends Account{
 
     public void loan(double amount) {
         if (amount <= loanLimit) {
-            deposit(amount);
+            balance += amount -10.0;
         }
     }
 }
